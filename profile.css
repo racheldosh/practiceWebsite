@@ -1,0 +1,54 @@
+@font-face { font-family: stitchingfont; src: url('quicksand_dash.otf'); }
+
+*{
+  box-sizing: border-box; /*this is so padding+margin included in the height and width of everything*/
+  padding: 0;
+  margin: 0;
+  background-color: #add8e6;
+  font-family: StitchingFont;
+}
+
+.header-container {
+  height: 5vh;
+  width: 100vw;
+}
+
+.grid-container {
+  display: grid;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  border: 1px dashed black;
+}
+
+.grid-container div {
+  aspect-ratio: 1/1;
+  background-color: white;
+  border: 1px dashed black;
+  padding: 3vh;
+  font-size: 1.5vmax;
+  line-height: 2.5vmax;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge - hiding scrollbars */
+  scrollbar-width: none;  /* Firefox - hiding scrollbars */
+}
+
+/* hiding scrollbars */
+.grid-container div::-webkit-scrollbar {
+    display: none;
+}
+
+.grid-upper-left h1 {
+  font-size: 5vmax;
+  line-height: 5vmax;
+  background-color: white;
+  text-align: center;
+}
+
+.grid-upper-left h2 {
+  font-size: 2vmax;
+  line-height: 3vmax;
+  background-color: white;
+  text-align: center;
+}
+

@@ -1,11 +1,26 @@
-@font-face { font-family: stitchingfont; src: url('quicksand_dash.otf'); }
-
 *{
   box-sizing: border-box; /*this is so padding+margin included in the height and width of everything*/
   padding: 0;
   margin: 0;
+  font-family: Helvetica;
+}
+
+.page {
   background-color: #add8e6;
-  font-family: StitchingFont;
+}
+
+h1 {
+  font-size: 5vmax;
+  line-height: 5vmax;
+  background-color: white;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2vmax;
+  line-height: 3vmax;
+  background-color: white;
+  text-align: center;
 }
 
 .header-container {
@@ -23,14 +38,14 @@
 
 .grid-container div {
   aspect-ratio: 1/1;
-  background-color: white;
   border: 1px dashed black;
   padding: 3vh;
-  font-size: 1.5vmax;
+  background-color: white;
+  font-size: 1.8vmax;
   line-height: 2.5vmax;
   overflow: scroll;
-  -ms-overflow-style: none;  /* IE and Edge - hiding scrollbars */
-  scrollbar-width: none;  /* Firefox - hiding scrollbars */
+  -ms-overflow-style: none; /* IE and Edge - hiding scrollbars */
+  scrollbar-width: none; /* Firefox - hiding scrollbars */
 }
 
 /* hiding scrollbars */
@@ -38,17 +53,10 @@
     display: none;
 }
 
-.grid-upper-left h1 {
-  font-size: 5vmax;
-  line-height: 5vmax;
-  background-color: white;
-  text-align: center;
+.grid-lower-right ul > li {
+  margin-left: 10px;
 }
 
-.grid-upper-left h2 {
-  font-size: 2vmax;
-  line-height: 3vmax;
+.grid-lower-right {
   background-color: white;
-  text-align: center;
 }
-

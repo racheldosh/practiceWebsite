@@ -24,7 +24,12 @@ h2 {
 }
 
 .header-container {
-  height: 5vh;
+  height: 7vh;
+  width: 100vw;
+}
+
+.footer-container {
+  height: 8vh;
   width: 100vw;
 }
 
@@ -34,6 +39,7 @@ h2 {
   margin-right: 5vh;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   border: 1px dashed black;
+  box-shadow: -7px -7px 5px #6fbad3;
 }
 
 .grid-container div {
